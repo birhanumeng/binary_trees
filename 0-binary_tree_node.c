@@ -2,16 +2,16 @@
 
 /**
  * binary_tree_node - it create binary trees.
- * @parent: parent node.
- * @value: data the contain.
- * Retrun: returns the newly created node NULL on failure
+ * @parent: refers to parent node.
+ * @value: data the node contain.
+ * Retrun: the new node otherwise, NULL on failure.
  */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
         binary_tree_t *root = malloc(sizeof(binary_tree_t));
         binary_tree_t *new = malloc(sizeof(binary_tree_t));
 
-        if(new == NULL || root == NULL)
+        if(new == NULL)
         {
                 return (NULL);
         }
